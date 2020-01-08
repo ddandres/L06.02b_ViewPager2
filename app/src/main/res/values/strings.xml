@@ -1,0 +1,31 @@
+<!--
+  ~ Copyright (c) 2020. David de Andrés and Juan Carlos Ruiz, DISCA - UPV, Development of apps for mobile devices.
+  -->
+
+<resources>
+    <string name="app_name">L06.02b_ViewPager2</string>
+    <!--Strings related to the DashboardActivity-->
+    <string name="button_view_pager2_horizontal">View Pager 2 with Horizontal Swiping</string>
+    <string name="button_view_pager2_vertical">View Pager 2 with Vertical Swiping</string>
+    <!--Strings related to the Fragments-->
+    <string name="hint_user_name">User Name</string>
+    <string name="hint_password">Password</string>
+    <string name="button_login">Login</string>
+    <string name="hint_sign_in_user_name">Select a user name</string>
+    <string name="hint_sign_in_password">Select a password</string>
+    <string name="hint_sign_in_repeat_password">Repeat the password</string>
+    <string name="hint_sign_in_email">Introduce your email address</string>
+    <string name="button_sign_in">Sign in</string>
+    <!--Strings related to the menus-->
+    <string name="menu_fragment_login">Option Login</string>
+    <string name="menu_fragment_signin">Option Sign in</string>
+    <string name="menu_fragment_list">Option List</string>
+    <string name="menu_fragment_grid">Option Grid</string>
+    <!--Strings related to the ViewPager-->
+    <string name="horizontal_orientation">Horizontal swiping</string>
+    <string name="vertical_orientation">Vertical swiping</string>
+    <string name="title_login_fragment">Login</string>
+    <string name="title_signin_fragment">Sign In</string>
+    <string name="title_list_fragment">List String</string>
+    <string name="title_grid_fragment">Grid Image</string>
+</resources>
