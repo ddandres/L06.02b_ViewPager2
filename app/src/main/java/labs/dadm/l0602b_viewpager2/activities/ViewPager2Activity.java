@@ -2,7 +2,7 @@
  * Copyright (c) 2020. David de Andrés and Juan Carlos Ruiz, DISCA - UPV, Development of apps for mobile devices.
  */
 
-package labds.dadm.l0602b_viewpager2.activities;
+package labs.dadm.l0602b_viewpager2.activities;
 
 import android.os.Bundle;
 
@@ -13,8 +13,8 @@ import androidx.viewpager2.widget.ViewPager2;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 
-import labds.dadm.l0602b_viewpager2.R;
-import labds.dadm.l0602b_viewpager2.adapters.CustomFragmentStateAdapter;
+import labs.dadm.l0602b_viewpager2.R;
+import labs.dadm.l0602b_viewpager2.adapters.CustomFragmentStateAdapter;
 
 /**
  * Displays different Fragments using a ViewPager2 to enable vertical/horizontal navigation (swipe).

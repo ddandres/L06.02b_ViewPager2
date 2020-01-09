@@ -15,25 +15,23 @@
 
     <Button
         android:id="@+id/bViewPager2Vertical"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="buttonClicked"
         android:text="@string/button_view_pager2_vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bViewPager2Horizontal" />
 
     <Button
         android:id="@+id/bViewPager2Horizontal"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="buttonClicked"
         android:text="@string/button_view_pager2_horizontal"
         app:layout_constraintBottom_toTopOf="@+id/bViewPager2Vertical"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

@@ -2,17 +2,17 @@
  * Copyright (c) 2020. David de Andrés and Juan Carlos Ruiz, DISCA - UPV, Development of apps for mobile devices.
  */
 
-package labds.dadm.l0602b_viewpager2.adapters;
+package labs.dadm.l0602b_viewpager2.adapters;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
-import labds.dadm.l0602b_viewpager2.fragments.GridImageFragment;
-import labds.dadm.l0602b_viewpager2.fragments.ListStringFragment;
-import labds.dadm.l0602b_viewpager2.fragments.LogInFragment;
-import labds.dadm.l0602b_viewpager2.fragments.SignInFragment;
+import labs.dadm.l0602b_viewpager2.fragments.GridImageFragment;
+import labs.dadm.l0602b_viewpager2.fragments.ListStringFragment;
+import labs.dadm.l0602b_viewpager2.fragments.LogInFragment;
+import labs.dadm.l0602b_viewpager2.fragments.SignInFragment;
 
 /**
  * Uses a Fragment to manage each page and handles saving and restoring of fragment's state.

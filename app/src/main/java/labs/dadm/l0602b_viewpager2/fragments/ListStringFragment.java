@@ -2,7 +2,7 @@
  * Copyright (c) 2016. David de Andrés and Juan Carlos Ruiz, DISCA - UPV, Development of apps for mobile devices.
  */
 
-package labds.dadm.l0602b_viewpager2.fragments;
+package labs.dadm.l0602b_viewpager2.fragments;
 
 
 import android.os.Bundle;
@@ -18,7 +18,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import labds.dadm.l0602b_viewpager2.R;
+import labs.dadm.l0602b_viewpager2.R;
 
 /**
  * Displays a List of Strings.

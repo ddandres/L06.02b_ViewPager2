@@ -2,7 +2,7 @@
  * Copyright (c) 2020. David de Andrés and Juan Carlos Ruiz, DISCA - UPV, Development of apps for mobile devices.
  */
 
-package labds.dadm.l0602b_viewpager2.activities;
+package labs.dadm.l0602b_viewpager2.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,7 +11,7 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager2.widget.ViewPager2;
 
-import labds.dadm.l0602b_viewpager2.R;
+import labs.dadm.l0602b_viewpager2.R;
 
 /**
  * Gives access to an activity showing different Fragments through a ViewPager.

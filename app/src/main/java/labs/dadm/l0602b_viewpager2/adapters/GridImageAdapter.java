@@ -2,7 +2,7 @@
  * Copyright (c) 2016. David de Andrés and Juan Carlos Ruiz, DISCA - UPV, Development of apps for mobile devices.
  */
 
-package labds.dadm.l0602b_viewpager2.adapters;
+package labs.dadm.l0602b_viewpager2.adapters;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 
-import labds.dadm.l0602b_viewpager2.R;
+import labs.dadm.l0602b_viewpager2.R;
 
 /*
  * Adapter that maps a given array of Drawables (provided as a resource) and a GridView.

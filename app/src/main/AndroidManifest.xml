@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="labds.dadm.l0602b_viewpager2">
+    package="labs.dadm.l0602b_viewpager2">
 
     <application
         android:allowBackup="true"
