@@ -6,7 +6,6 @@ package labs.dadm.l0602b_viewpager2.activities;
 
 import android.os.Bundle;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager2.widget.ViewPager2;
 
@@ -50,25 +49,22 @@ public class ViewPager2Activity extends AppCompatActivity {
         TabLayout tabLayout = findViewById(R.id.tabLayout);
         // Associate the TabLayout with the ViewPager2 using a TabLayoutMediator,
         // so any changes in one of them are automatically reflected on the other
-        new TabLayoutMediator(tabLayout, pager2, new TabLayoutMediator.TabConfigurationStrategy() {
-            @Override
-            public void onConfigureTab(@NonNull TabLayout.Tab tab, int position) {
-                // Set the text for each tab
-                switch (position) {
-                    case 1:
-                        tab.setText(R.string.title_signin_fragment);
-                        break;
-                    case 2:
-                        tab.setText(R.string.title_list_fragment);
-                        break;
-                    case 3:
-                        tab.setText(R.string.title_grid_fragment);
-                        break;
-                    // Default case includes position == 0
-                    default:
-                        tab.setText(R.string.title_login_fragment);
-                        break;
-                }
+        new TabLayoutMediator(tabLayout, pager2, (tab, position) -> {
+            // Set the text for each tab
+            switch (position) {
+                case 1:
+                    tab.setText(R.string.title_signin_fragment);
+                    break;
+                case 2:
+                    tab.setText(R.string.title_list_fragment);
+                    break;
+                case 3:
+                    tab.setText(R.string.title_grid_fragment);
+                    break;
+                // Default case includes position == 0
+                default:
+                    tab.setText(R.string.title_login_fragment);
+                    break;
             }
         }).attach(); // link the TabLayout and the Viewpager2
     }

@@ -32,18 +32,13 @@ public class DashboardActivity extends AppCompatActivity {
 
         Intent intent = new Intent(this, ViewPager2Activity.class);
         // Determine what to do depending on the Button clicked
-        switch (view.getId()) {
-
+        final int clickedButton = view.getId();
+        if (clickedButton == R.id.bViewPager2Horizontal) {
             // View Pager 2 with horizontal swiping
-            case R.id.bViewPager2Horizontal:
-                intent.putExtra("orientation", ViewPager2.ORIENTATION_HORIZONTAL);
-                break;
-
+            intent.putExtra("orientation", ViewPager2.ORIENTATION_HORIZONTAL);
+        } else if (clickedButton == R.id.bViewPager2Vertical) {
             // View Pager 2 with vertical swiping
-            case R.id.bViewPager2Vertical:
-                intent.putExtra("orientation", ViewPager2.ORIENTATION_VERTICAL);
-                break;
-
+            intent.putExtra("orientation", ViewPager2.ORIENTATION_VERTICAL);
         }
         // Launch the activity containing the ViewPager2
         startActivity(intent);
