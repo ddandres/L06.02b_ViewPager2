@@ -4,6 +4,8 @@
 
 package labs.dadm.l0602b_viewpager2.adapters;
 
+import android.os.Bundle;
+
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
@@ -43,7 +45,10 @@ public class CustomFragmentStateAdapter extends FragmentStateAdapter {
                 break;
             // Default case includes position == 0
             default:
-                result = LogInFragment.newInstance("David");
+                result = new LogInFragment();
+                Bundle bundle = new Bundle();
+                bundle.putString("username", "David");
+                result.setArguments(bundle);
                 break;
         }
         return result;
