@@ -13,26 +13,25 @@ import androidx.viewpager2.widget.ViewPager2;
 
 import labs.dadm.l0602b_viewpager2.R;
 
-/**
- * Gives access to an activity showing different Fragments through a ViewPager.
- * The titles identifying each Fragment can be displayed using different components.
- */
+// Gives access to an activity showing different Fragments through a ViewPager.
+// The titles identifying each Fragment can be displayed using different components.
 public class DashboardActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
+
+        final View.OnClickListener listener = v -> buttonClicked(v.getId());
+        findViewById(R.id.bViewPager2Vertical).setOnClickListener(listener);
+        findViewById(R.id.bViewPager2Horizontal).setOnClickListener(listener);
     }
 
-    /**
-     * Starts the different activities of the application.
-     */
-    public void buttonClicked(View view) {
+    // Starts the different activities of the application.
+    private void buttonClicked(int clickedButton) {
 
         Intent intent = new Intent(this, ViewPager2Activity.class);
         // Determine what to do depending on the Button clicked
-        final int clickedButton = view.getId();
         if (clickedButton == R.id.bViewPager2Horizontal) {
             // View Pager 2 with horizontal swiping
             intent.putExtra("orientation", ViewPager2.ORIENTATION_HORIZONTAL);
@@ -43,5 +42,4 @@ public class DashboardActivity extends AppCompatActivity {
         // Launch the activity containing the ViewPager2
         startActivity(intent);
     }
-
 }

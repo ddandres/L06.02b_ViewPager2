@@ -6,6 +6,7 @@ package labs.dadm.l0602b_viewpager2.activities;
 
 import android.os.Bundle;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager2.widget.ViewPager2;
 
@@ -15,9 +16,7 @@ import com.google.android.material.tabs.TabLayoutMediator;
 import labs.dadm.l0602b_viewpager2.R;
 import labs.dadm.l0602b_viewpager2.adapters.CustomFragmentStateAdapter;
 
-/**
- * Displays different Fragments using a ViewPager2 to enable vertical/horizontal navigation (swipe).
- */
+// Displays different Fragments using a ViewPager2 to enable vertical/horizontal navigation (swipe).
 public class ViewPager2Activity extends AppCompatActivity {
 
     // Hold a reference to the ViewPager2
@@ -37,10 +36,13 @@ public class ViewPager2Activity extends AppCompatActivity {
         pager2.setOrientation(orientation);
 
         // Set the title of the ActionBar
-        if (orientation == ViewPager2.ORIENTATION_HORIZONTAL) {
-            getSupportActionBar().setTitle(R.string.horizontal_orientation);
-        } else {
-            getSupportActionBar().setTitle(R.string.vertical_orientation);
+        final ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            if (orientation == ViewPager2.ORIENTATION_HORIZONTAL) {
+                actionBar.setTitle(R.string.horizontal_orientation);
+            } else {
+                actionBar.setTitle(R.string.vertical_orientation);
+            }
         }
         // Create a new FragmentStateAdapter and associate it to the ViewPager2
         pager2.setAdapter(new CustomFragmentStateAdapter(ViewPager2Activity.this));

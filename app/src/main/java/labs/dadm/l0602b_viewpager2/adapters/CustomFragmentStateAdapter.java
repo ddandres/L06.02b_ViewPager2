@@ -16,18 +16,14 @@ import labs.dadm.l0602b_viewpager2.fragments.ListStringFragment;
 import labs.dadm.l0602b_viewpager2.fragments.LogInFragment;
 import labs.dadm.l0602b_viewpager2.fragments.SignInFragment;
 
-/**
- * Uses a Fragment to manage each page and handles saving and restoring of fragment's state.
- */
+// Uses a Fragment to manage each page and handles saving and restoring of fragment's state.
 public class CustomFragmentStateAdapter extends FragmentStateAdapter {
 
     public CustomFragmentStateAdapter(@NonNull FragmentActivity fragmentActivity) {
         super(fragmentActivity);
     }
 
-    /*
-     * Provides a new Fragment associated to the given position.
-     */
+    // Provides a new Fragment associated to the given position.
     @NonNull
     @Override
     public Fragment createFragment(int position) {
@@ -54,13 +50,9 @@ public class CustomFragmentStateAdapter extends FragmentStateAdapter {
         return result;
     }
 
-    /*
-     * Total number of elements kept by the adapter.
-     */
+    // Total number of elements kept by the adapter.
     @Override
     public int getItemCount() {
         return 4;
     }
-
-
 }
